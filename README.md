@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LinkedIn Profile Generator
 
-## Getting Started
+Aplicación web construida con Next.js y TailwindCSS que genera una versión personalizada de la sección "Acerca de" para perfiles de LinkedIn utilizando inteligencia artificial.
 
-First, run the development server:
+## Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Interfaz de usuario moderna y responsiva con TailwindCSS
+- Validación de formularios con React Hook Form y Zod
+- Generación de perfiles profesionales con OpenAI
+- Soporte multilingüe (Español e Inglés)
+- Personalización del tono de voz (profesional, formal, inspiracional, cercano, creativo)
+- Copiado rápido al portapapeles de los perfiles generados
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologías utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Next.js](https://nextjs.org/) - Framework de React
+- [TailwindCSS](https://tailwindcss.com/) - Framework de CSS utilitario
+- [React Hook Form](https://react-hook-form.com/) - Manejo de formularios
+- [Zod](https://zod.dev/) - Validación de esquemas
+- [OpenAI API](https://openai.com/) - Generación de contenido con IA
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Configuración
 
-## Learn More
+1. Clona este repositorio
+2. Instala las dependencias: `npm install`
+3. Crea un archivo `.env.local` con tu clave API de OpenAI:
+   ```
+   NEXT_PUBLIC_OPENAI_API_KEY=tu_clave_de_api_de_openai
+   ```
+4. Inicia el servidor de desarrollo: `npm run dev`
+5. Abre [http://localhost:3000](http://localhost:3000) en tu navegador
 
-To learn more about Next.js, take a look at the following resources:
+## Despliegue
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Esta aplicación puede ser fácilmente desplegada en Vercel:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftu-usuario%2Flinkedin-profile-generator)
 
-## Deploy on Vercel
+## Licencia
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este proyecto está bajo la licencia MIT. Ver el archivo `LICENSE` para más detalles.
