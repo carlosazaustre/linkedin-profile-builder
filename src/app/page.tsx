@@ -1,13 +1,13 @@
-import Link from 'next/link';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Button from './components/Button';
+import Link from "next/link";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Button from "./components/Button";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      
+
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">
@@ -16,8 +16,8 @@ export default function Home() {
               Destaca en LinkedIn con un perfil profesional
             </h1>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Genera una sección "Acerca de" personalizada para tu perfil de LinkedIn 
-              utilizando inteligencia artificial.
+              Genera una sección &quot;Acerca de&quot; personalizada para tu
+              perfil de LinkedIn utilizando inteligencia artificial.
             </p>
             <Link href="/profile-generator">
               <Button className="text-lg px-8 py-3">
@@ -33,29 +33,38 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-center mb-12">
               ¿Por qué usar nuestro generador?
             </h2>
-            
+
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="text-blue-600 text-4xl mb-4">✨</div>
-                <h3 className="text-xl font-semibold mb-2">Personalizado para ti</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Personalizado para ti
+                </h3>
                 <p className="text-gray-600">
-                  Genera contenido específico para tu experiencia y habilidades técnicas.
+                  Genera contenido específico para tu experiencia y habilidades
+                  técnicas.
                 </p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="text-blue-600 text-4xl mb-4">🌐</div>
-                <h3 className="text-xl font-semibold mb-2">Soporte multilingüe</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Soporte multilingüe
+                </h3>
                 <p className="text-gray-600">
-                  Crea tu perfil tanto en español como en inglés para alcanzar audiencias globales.
+                  Crea tu perfil tanto en español como en inglés para alcanzar
+                  audiencias globales.
                 </p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="text-blue-600 text-4xl mb-4">🎯</div>
-                <h3 className="text-xl font-semibold mb-2">Adaptado al tono deseado</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Adaptado al tono deseado
+                </h3>
                 <p className="text-gray-600">
-                  Elige entre diferentes estilos: profesional, formal, inspiracional, cercano o creativo.
+                  Elige entre diferentes estilos: profesional, formal,
+                  inspiracional, cercano o creativo.
                 </p>
               </div>
             </div>
@@ -69,17 +78,16 @@ export default function Home() {
               Listo para mejorar tu presencia profesional
             </h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Crea tu perfil ahora y aumenta tus posibilidades de ser contactado por reclutadores.
+              Crea tu perfil ahora y aumenta tus posibilidades de ser contactado
+              por reclutadores.
             </p>
             <Link href="/profile-generator">
-              <Button className="text-lg px-6 py-3">
-                Empezar ahora
-              </Button>
+              <Button className="text-lg px-6 py-3">Empezar ahora</Button>
             </Link>
           </div>
         </section>
       </main>
-      
+
       <Footer />
     </div>
   );
