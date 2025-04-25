@@ -19,7 +19,7 @@ export async function generateLinkedInProfile(formData: ProfileFormValues): Prom
         Logros destacados: ${formData.achievements || 'No especificados'}.
         
         Por favor, escribe el texto en español, en primera persona, con un estilo conversacional apropiado para LinkedIn.
-        El perfil debe tener entre 3-4 párrafos, ser conciso y atractivo para recrutadores.`
+        El perfil debe tener entre 3-4 párrafos, ser conciso y atractivo para reclutadores.`
       
       : `Generate a professional LinkedIn "About" section with the following tone: ${formData.toneOfVoice}.
         The profile is for a person named ${formData.fullName}, who works as a ${formData.currentRole}
